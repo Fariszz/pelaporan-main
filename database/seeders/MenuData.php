@@ -15,55 +15,70 @@ class MenuData extends Seeder
      */
     public function run()
     {
-        $menu=[
+        $menu = [
             [
+                'id' => 1,
                 'name' => 'Dashboard',
                 'link' => '/dashboard',
                 'icon' => 'fa-solid fa-gauge',
             ],
             [
-                'name' => 'Reviu Laporan Keuangan',
+                'id' => 2,
+                'name' => 'Rencana Kegiatan',
                 'link' => '/posts',
                 'icon' => 'fa-solid fa-list-check',
             ],
             [
-                'name' => 'Laporan Unit kerja',
-                'link' => '/dashboard',
+                'id' => 4,
+                'name' => 'Approving Penugasan',
+                'link' => '/reviewKetua',
                 'icon' => 'fa-solid fa-list-check',
             ],
             [
-                'name' => 'Audit Eksternal',
-                'link' => '/dashboard',
+                'id' => 5,
+                'name' => 'Laporan Akhir',
+                'link' => '/laporanAkhir',
                 'icon' => 'fa-solid fa-list-check',
             ],
             [
-                'name' => 'Laporan Hasil Pemeriksaan',
-                'link' => '/dashboard',
-                'icon' => 'fa-solid fa-list-check',
+                'id' => 6,
+                'name' => 'Peta Risiko',
+                'link' => '/petas',
+                'icon' => 'fa-regular fa-newspaper',
             ],
             [
-                'name' => 'Anggota',
-                'link' => '/anggotas',
-                'icon' => 'fa-solid fa-user',
-            ],
-            [
-                'name' => 'Auditee',
-                'link' => '/audites',
-                'icon' => 'fa-regular fa-user',
-            ],
-            [
-                'name' => 'Dokumen',
+                'id' => 7,
+                'name' => 'Dokumen Reviu',
                 'link' => '/dokumens',
                 'icon' => 'fa-solid fa-file',
             ],
             [
-                'name' => 'Menu',
+                'id' => 8,
+                'name' => 'Dokumen Tindak Lanjut',
+                'link' => '/dokumen-tindak-lanjut',
+                'icon' => 'fa-regular fa-file',
+            ],
+            [
+                'id' => 9,
+                'name' => 'Setting Menu',
                 'link' => '/admin/panel',
-                'icon' => 'fa-solid fa-list-check',
+                'icon' => 'fa-solid fa-gear',
+            ],
+            [
+                'id' => 10,
+                'name' => 'Manajemen User',
+                'link' => '/users',
+                'icon' => 'fa-solid fa-user',
+            ],
+            [
+                'id' => 17,
+                'name' => 'Unit Kerja',
+                'link' => '/unit-kerja',
+                'icon' => 'fa-regular fa-bookmark',
             ],
         ];
 
-        foreach($menu as $key => $value){
+        foreach ($menu as $key => $value) {
             Menu::create($value);
         }
     }

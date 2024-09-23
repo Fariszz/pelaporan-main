@@ -26,10 +26,6 @@ class LevelMenuSeeder extends Seeder
             ],
             [
                 'id_level' => '1',
-                'id_menu' => '3',
-            ],
-            [
-                'id_level' => '1',
                 'id_menu' => '4',
             ],
             [
@@ -51,6 +47,14 @@ class LevelMenuSeeder extends Seeder
             [
                 'id_level' => '1',
                 'id_menu' => '9',
+            ],
+            [
+                'id_level' => '1',
+                'id_menu' => '10',
+            ],
+            [
+                'id_level' => '1',
+                'id_menu' => '17',
             ],
 
             // create same for level_id 2 3 4
